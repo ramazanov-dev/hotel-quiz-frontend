@@ -1,0 +1,56 @@
+.textareaContainer {
+  padding: 10px 10px 10px 15px;
+  border: 2px solid #c5cddc;
+  border-radius: 15px;
+  width: 100%;
+  transition: 0.3s;
+  transition-property: border, transform;
+  position: relative;
+}
+
+.textareaContainer:hover {
+  border: 2px solid #93b0e8;
+  transform: scale(1.01);
+}
+
+.textareaContainer:focus-within {
+  border: 2px solid #93b0e8;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 150px;
+  height: 100%;
+}
+
+.textareaAutoSize {
+  width: 100%;
+  resize: none;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 40px;
+  height: 100%;
+}
+
+.textarea::placeholder {
+  color: #94a1b9;
+  font-size: 16px;
+}
+
+.textareaAutoSize::placeholder{
+  color: #94a1b9;
+  font-size: 16px;
+}
+
+.symbolCounter {
+  position: absolute;
+  right: 20px;
+  font-size: 12px;
+  bottom: 8px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px;
+}

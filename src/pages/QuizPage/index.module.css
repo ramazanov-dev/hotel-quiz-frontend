@@ -1,0 +1,49 @@
+.progressbar{
+  width: 100%;
+  height: 15px;
+  border-radius: 50px;
+  background: #e7e7e7;
+  overflow: hidden;
+}
+
+.progress{
+  background: linear-gradient(to right, #6190e8, #a7bfe8);
+  transition: 0.3s;
+  width: 0;
+  height: 100%;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.emoji{
+  font-size: 150px;
+  width: 190px;
+}
+
+.title{
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+@media (max-width:  550px){
+  .quizContainer{
+    min-height: 100vh !important;
+    justify-content: space-between !important;
+  }
+}

@@ -1,0 +1,28 @@
+.footer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.emoji{
+  font-size: 150px;
+  width: 190px;
+  //transform: translateX(40px);
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+}

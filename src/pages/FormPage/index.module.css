@@ -1,0 +1,38 @@
+.footer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  width: 100%;
+  flex-shrink: 0;
+  gap: 15px;
+}
+
+.emoji{
+  font-size: 150px;
+  width: 190px;
+  //transform: translateX(40px);
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  align-self: start;
+}
+
+.subtitle{
+  align-self: start;
+  color: var(--hint-color);
+  font-size: 16px;
+}

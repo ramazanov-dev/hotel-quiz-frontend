@@ -1,0 +1,90 @@
+.inputContainer {
+  padding: 2px 1px;
+  width: 100%;
+  position: relative;
+}
+
+.inputContainer::after, .inputContainer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px solid var(--hint-color);
+  width: 100%;
+
+}
+
+.inputContainer::after {
+  width: 0;
+  transition-duration: 0.3s;
+  transition-property: width;
+
+}
+
+.inputContainer:focus-within::after {
+  border-color: var(--accent-color);
+  border-width: 1.5px;
+  width: 100%;
+}
+
+.inputContainer:not(:focus-within):after {
+  border-width: 1px;
+  border-color: var(--accent-color);
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  user-select: none;
+}
+
+.input {
+  padding: 12px 0;
+  width: 100%;
+  color: var(--text-color) !important;
+}
+
+.input::placeholder {
+  opacity: 0;
+}
+
+.input::placeholder, .placeholder {
+  color: var(--hint-color);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  opacity: 1;
+  top: 0;
+  color: var(--hint-color);
+  font-size: 12px;
+}
+
+.input:focus-within ~ .placeholder {
+  opacity: 1;
+  top: 0;
+  color: var(--accent-color);
+  font-size: 12px;
+}
+
+.error > .placeholder {
+  color: #cc1d1d;
+}
+
+.error::before {
+  border-color: #cc1d1d !important;
+}
+
+.error::after {
+  border-color: #cc1d1d !important;
+}
+
+.errorMessage {
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  font-size: 11px;
+  color: #cc1d1d;
+}

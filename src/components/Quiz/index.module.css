@@ -1,0 +1,168 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+}
+
+.answerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.emojiContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.bubbleContainer {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.bubbleContainer > h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.bubbleContainer > div {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.answer {
+  padding: 12px 8px;
+  border: 2px solid #c5cddc;
+  border-radius: 15px;
+  width: fit-content;
+  font-size: 90px;
+  transition: 0.3s;
+  cursor: pointer;
+  transition-property: transform;
+  user-select: none;
+}
+
+.answer:hover {
+  border: 2px solid #93b0e8;
+  transform: scale(1.01);
+}
+
+.answer:active {
+  transition: 0.1s;
+  transform: scale(1.01);
+}
+
+.answer:focus-visible {
+  border: none;
+}
+
+.answerIsActive {
+  border: none;
+  transform: scale(1.01);
+  background: #cee0ff;
+}
+
+.answerIsActive:hover {
+  border: none;
+  transform: scale(1.01);
+}
+
+.answerIsActive:active {
+  transition: none;
+  transform: none;
+}
+
+.answerIsActive:focus-visible {
+  border: none;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  user-select: none;
+}
+
+.textareaContainer {
+  padding: 10px 10px 10px 15px;
+  border: 2px solid #c5cddc;
+  border-radius: 15px;
+  width: 100%;
+  height: 150px;
+  transition: 0.3s;
+  transition-property: border, transform;
+  position: relative;
+}
+
+.textareaContainer:hover {
+  border: 2px solid #93b0e8;
+  transform: scale(1.01);
+}
+
+.textareaContainer:focus {
+  border: 2px solid #93b0e8;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 150px;
+  height: 100%;
+}
+
+.textarea::placeholder {
+  color: #94a1b9;
+  font-size: 18px;
+}
+
+.textareaContainerActive {
+  border: 2px solid #93b0e8;
+}
+
+.symbolCounter {
+  position: absolute;
+  right: 20px;
+  font-size: 12px;
+  bottom: 8px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+
+@media (max-width:  550px){
+  .emojiContainer{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .answer{
+    font-size: 80px;
+  }
+}
+
+@media (max-width:  440px){
+  .emojiContainer{
+    justify-content: start;
+  }
+}
